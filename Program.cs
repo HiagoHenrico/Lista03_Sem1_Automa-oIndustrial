@@ -70,7 +70,55 @@ namespace Lista3_AutomacaoIndustrial_Sem1
             {
                 Console.WriteLine("Erro!!!?");
             }
-          
+            
+            //Ex_4
+            Console.WriteLine("Exercício 4 - Exibir tabuada do 5.");
+            for(int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine($"{i}X{i*5}");
+            }
+
+            //Ex_5
+            Double num_ex5;
+            Console.WriteLine("Exercício 5 - Inserir um valor qualquer, travar para apenas aceitar valores positivos. Exibir tabuada até o 10 com o valor inserido.");
+            do
+            {
+                Console.Write("Digite um número positivo: ");
+                num_ex5 = Double.Parse(Console.ReadLine());
+                if (num_ex5 <= 0)
+                {
+                    //Console.WriteLine("Digite um número positivo: ");
+                }
+
+            } while (num_ex5 <= 0);
+
+            Console.WriteLine($"A tabuada do {num_ex5} é:");
+
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine($"{i} X {num_ex5*i}",i, num_ex5);
+            }
+
+            //Ex_6
+            Double num_ex6, indiceTabuada;
+            Console.WriteLine("Exercício 6 - ");
+            do
+            {
+                Console.Write("Digite um número positivo: ");
+                num_ex6 = Double.Parse(Console.ReadLine());
+                Console.Write("Digite o índice da tabuada: ");
+                indiceTabuada = Double.Parse(Console.ReadLine());
+                if (num_ex6 <= 0)
+                {
+                    //Console.WriteLine("Digite um número positivo: ");
+                }
+
+            } while (num_ex6 <= 0);
+
+            Console.WriteLine($"Tabuada do {num_ex6} - indice {indiceTabuada}:");
+            
+            for(int i = indiceTabuada;)
+            {}
 
         }
     }
